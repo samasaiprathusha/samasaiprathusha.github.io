@@ -1,0 +1,72 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+  }
+  
+  .container {
+    display: grid;
+    grid-template-columns: 200px auto 200px;
+    grid-template-rows: auto;
+    grid-template-areas: "sidebar content advertisement";
+    min-height: 100vh;
+  }
+  
+  header {
+    grid-area: header;
+    background-color: #333;
+    color: #ffdb58;
+    padding: 10px;
+    text-align: center;
+    font-style: italic;
+    font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  }
+  
+  .sidebar {
+    grid-area: sidebar;
+    background-color: #ffdb58;
+    padding: 10px;
+  }
+  
+  .sidebar ul {
+    list-style-type: none;
+    padding: 0; 
+  }
+  
+  .sidebar ul li {
+    margin-bottom: 25px;
+  font-weight: bold;
+  font-size: 25px;
+  }
+  
+  .content {
+    grid-area: content;
+    padding: 10px;
+  }
+  
+  .advertisement {
+    grid-area: advertisement;
+    background-color: #ffdb58;
+    padding: 15px;
+  }
+  
+  .advertisement img {
+    width: 100%;
+    height: auto;
+  }
+  .space {
+    margin-top: 40px;
+  }
+  footer {
+    grid-area: footer;
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+  }
+  header img {
+    width: 250px; /* Adjust the width as needed */
+    height: 150px; /* Maintain aspect ratio */
+  }
+  
